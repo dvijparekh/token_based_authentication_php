@@ -1,0 +1,9 @@
+CREATE TABLE `token_details` (
+ `id` bigint(20) NOT NULL AUTO_INCREMENT,
+ `token` varchar(255) NOT NULL,
+ `created_datetime` datetime NOT NULL,
+ `expire_datetime` datetime NOT NULL,
+ `created_by` int(11) NOT NULL,
+ `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '1.active 2.inactive',
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1
